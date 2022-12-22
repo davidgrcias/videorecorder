@@ -29,8 +29,8 @@
 
         mediaRecorder = new MediaRecorder(videoStream);
 
+        let blob = [];
         mediaRecorder.addEventListener('dataavailable', function(e){
-          let blob = [];
           blob.push(e.data);
         })
 
